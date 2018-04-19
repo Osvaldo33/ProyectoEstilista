@@ -1,0 +1,286 @@
+body{
+  margin:0;
+}
+*, ¨::before, *::after{
+  box-sizing: border-box;
+}
+.carga{
+    position: fixed;
+    z-index: 10000;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(255,238,255,1);
+    transition: all 2s ease;
+}
+.cuadro{
+    z-index: 10;
+    position: absolute;
+    top:3vh;
+    left:20vw;
+    background-color:rgba(255,238,255,1);
+    width: 50vw;
+    height:85vh;
+    transition: all 1s ease;
+}
+
+.carga img{
+    position: absolute;
+    top:4vh;
+    left:20vw;
+    width: 50vw;
+    height: 80vh;
+    transition: all 1s ease;
+}
+.porcentaje{
+    position: absolute;
+    top: 90vh;
+    left:45vw;
+    width: 10vw;
+    height: 7vh;
+    text-align: center;
+    font-size: 3vw;
+    transition: all 1s ease;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100vh 400vh 35vh;
+  width: 100vw;
+  height: 535vh;
+  max-width: 100%;
+}
+.header{
+  max-width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.logo{
+  background-color:#FDFAF9;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.logoCompleto{
+    margin: 1vw 0vw 0vw 1vw;
+    align-items: flex-start;
+    width: 18vw;
+    height: 6vw;
+}
+.menu{
+    margin: 2vw 2vw 0 0; 
+    align-items: flex-end;
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+.fondoLogo{
+    display: flex;
+    height: 85%;
+    background-image: url(Img/fondoHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 5vw;
+}
+.comprar{
+    position:relative;
+    left: 20vw;
+    align-self: center;
+    height: 4vw;
+    width: 10vw;
+    box-shadow: 8px 8px 10px 0px black;
+    background-color: #002a43;
+    color:#fff2ff;
+    cursor: pointer;
+    font-size: 1.5vw
+}
+.contenidoPrincipal{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    max-width: 100%;   
+}
+.alisado{
+    display:flex;
+}
+.textoAlisado{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position:relative;
+    top:5vw;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    border:solid 7px #ffeeff;
+    color: #ffeeff;
+    font-size: 1.5vw;
+    
+}
+.alisadoImg{
+    display: flex;
+    justify-content: center;
+    background-image: url(Img/secadora.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:35vw 100vh;
+    width: 35vw;
+    height: 100vh;
+}
+.foto{
+    background-color:#ffeeff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 65%;
+    height: 100vh;
+}
+.foto img{
+    align-self: center;
+    width:50vw ;
+    height:50vh;
+    margin-bottom: 5em;
+}
+.somos{
+    height: 40vh;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    max-width: 100%;  
+    background-color:#FDFAF9;
+    display: flex;
+    justify-content: center;
+}
+.textoSomos, .historia1, .historia2{
+    align-self: center;
+    width: 40vw;
+    text-align: center;
+    color:#727272;
+}
+.servicios{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.facial{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    height: 100vh;
+    background-image: url(Img/facial2.png);
+    background-repeat: no-repeat;
+    background-size: 110vw 107vh;
+    background-position:50% center;
+    
+}
+.textoFacial{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position:relative;
+    top:5vw;
+    width: 25%;
+    height: 10%;
+    text-align: center;
+    border:solid 7px #ffeeff;
+    color: #ffeeff;
+    font-size: 3vw;
+}
+.manicura{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    height: 100vh;
+    background-image: url(Img/manos2.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position:50% center;
+}
+.textoManicura{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position:relative;
+    top:5vw;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    border:solid 7px #ffeeff;
+    color: #ffeeff;
+    font-size: 3vw;
+}
+.historia{
+    height: 60vh;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    max-width: 100%;  
+    background-color:#FDFAF9;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.contacto{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(Img/fondocontacto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:50% center;
+    
+}
+.contacto::after{
+    content:"";
+    max-width: 100%;
+    background-color:rgba(255,238,255,.2);
+    height: 100vh;
+    width: 100vw;
+    
+}
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color:black;
+    color:#82817f;
+}
+.textofooter{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+}
+.textofooter span:nth-child(1){
+    align-self: center;
+}
+.textofooter span:nth-child(2){
+    align-self: center;
+}
+.textofooter span:nth-child(3){
+    align-self: center;
+}
+.redes{
+    width: 15vw;
+    position:relative;
+    top: 0vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.redes span{
+    padding: 0vw 1vw;
+}
+.redes span img{
+    width: 2vw;
+    height: 2vw;
+}
